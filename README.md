@@ -129,11 +129,15 @@ project/
 ├─ public/
 │  └─ assets/
 │     └─ heroes/
+│  └─ sound/
 ├─ scripts/
+│  ├─ controller.html
 │  └─ syncHeroes.js
 ├─ src/
 │  ├─ App.jsx
-│  └─ App.css
+│  ├─ App.css
+│  └─ main.jsx
+├─ package-lock.json
 ├─ package.json
 └─ README.md
 ```
