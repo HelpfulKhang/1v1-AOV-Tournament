@@ -559,10 +559,11 @@ export default function App() {
             <section className="rules-block">
               <h3>⚔️ II. LUẬT SOLO</h3>
               <ul>
-                <li>🗺️ Map: Solo 1v1.</li>
+                <li>🗺️ Map: Solo 5v5.</li>
                 <li>⏱️ Thời gian: Tối đa 6 phút/ván.</li>
                 <li>🚫 Không được ăn gói máu giữa map. Vi phạm: xử thua ván.</li>
                 <li>🚫 Không được về tế đàn hồi máu sau phút thứ 4. Vi phạm: xử thua ván.</li>
+                <li>🚫 Không được ăn quái rừng. Vi phạm: xử thua ván.</li>
                 <li>🛠️ Được phép sử dụng trang bị nhánh phụ trợ.</li>
               </ul>
             </section>
