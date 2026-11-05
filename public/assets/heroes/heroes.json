@@ -1,0 +1,782 @@
+[
+  {
+    "id": "airi",
+    "name": "Airi",
+    "icon": "/assets/heroes/airi/icon.webp",
+    "card": "/assets/heroes/airi/card.webp"
+  },
+  {
+    "id": "aleister",
+    "name": "Aleister",
+    "icon": "/assets/heroes/aleister/icon.webp",
+    "card": "/assets/heroes/aleister/card.webp"
+  },
+  {
+    "id": "alice",
+    "name": "Alice",
+    "icon": "/assets/heroes/alice/icon.webp",
+    "card": "/assets/heroes/alice/card.webp"
+  },
+  {
+    "id": "allain",
+    "name": "Allain",
+    "icon": "/assets/heroes/allain/icon.webp",
+    "card": "/assets/heroes/allain/card.webp"
+  },
+  {
+    "id": "amily",
+    "name": "Amily",
+    "icon": "/assets/heroes/amily/icon.webp",
+    "card": "/assets/heroes/amily/card.webp"
+  },
+  {
+    "id": "annette",
+    "name": "Annette",
+    "icon": "/assets/heroes/annette/icon.webp",
+    "card": "/assets/heroes/annette/card.webp"
+  },
+  {
+    "id": "aoi",
+    "name": "Aoi",
+    "icon": "/assets/heroes/aoi/icon.webp",
+    "card": "/assets/heroes/aoi/card.webp"
+  },
+  {
+    "id": "arduin",
+    "name": "Arduin",
+    "icon": "/assets/heroes/arduin/icon.webp",
+    "card": "/assets/heroes/arduin/card.webp"
+  },
+  {
+    "id": "arthur",
+    "name": "Arthur",
+    "icon": "/assets/heroes/arthur/icon.webp",
+    "card": "/assets/heroes/arthur/card.webp"
+  },
+  {
+    "id": "arum",
+    "name": "Arum",
+    "icon": "/assets/heroes/arum/icon.webp",
+    "card": "/assets/heroes/arum/card.webp"
+  },
+  {
+    "id": "astrid",
+    "name": "Astrid",
+    "icon": "/assets/heroes/astrid/icon.webp",
+    "card": "/assets/heroes/astrid/card.webp"
+  },
+  {
+    "id": "ata",
+    "name": "Ata",
+    "icon": "/assets/heroes/ata/icon.webp",
+    "card": "/assets/heroes/ata/card.webp"
+  },
+  {
+    "id": "aya",
+    "name": "Aya",
+    "icon": "/assets/heroes/aya/icon.webp",
+    "card": "/assets/heroes/aya/card.webp"
+  },
+  {
+    "id": "azzenka",
+    "name": "Azzen’Ka",
+    "icon": "/assets/heroes/azzenka/icon.webp",
+    "card": "/assets/heroes/azzenka/card.webp"
+  },
+  {
+    "id": "baldum",
+    "name": "Baldum",
+    "icon": "/assets/heroes/baldum/icon.webp",
+    "card": "/assets/heroes/baldum/card.webp"
+  },
+  {
+    "id": "bijan",
+    "name": "Bijan",
+    "icon": "/assets/heroes/bijan/icon.webp",
+    "card": "/assets/heroes/bijan/card.webp"
+  },
+  {
+    "id": "billow",
+    "name": "Billow",
+    "icon": "/assets/heroes/billow/icon.webp",
+    "card": "/assets/heroes/billow/card.webp"
+  },
+  {
+    "id": "biron",
+    "name": "Biron",
+    "icon": "/assets/heroes/biron/icon.webp",
+    "card": "/assets/heroes/biron/card.webp"
+  },
+  {
+    "id": "bolt-baron",
+    "name": "Bolt Baron",
+    "icon": "/assets/heroes/bolt-baron/icon.webp",
+    "card": "/assets/heroes/bolt-baron/card.webp"
+  },
+  {
+    "id": "bonnie",
+    "name": "Bonnie",
+    "icon": "/assets/heroes/bonnie/icon.webp",
+    "card": "/assets/heroes/bonnie/card.webp"
+  },
+  {
+    "id": "bright",
+    "name": "Bright",
+    "icon": "/assets/heroes/bright/icon.webp",
+    "card": "/assets/heroes/bright/card.webp"
+  },
+  {
+    "id": "butterfly",
+    "name": "Butterfly",
+    "icon": "/assets/heroes/butterfly/icon.webp",
+    "card": "/assets/heroes/butterfly/card.webp"
+  },
+  {
+    "id": "capheny",
+    "name": "Capheny",
+    "icon": "/assets/heroes/capheny/icon.webp",
+    "card": "/assets/heroes/capheny/card.webp"
+  },
+  {
+    "id": "celica",
+    "name": "Celica",
+    "icon": "/assets/heroes/celica/icon.webp",
+    "card": "/assets/heroes/celica/card.webp"
+  },
+  {
+    "id": "charlotte",
+    "name": "Charlotte",
+    "icon": "/assets/heroes/charlotte/icon.webp",
+    "card": "/assets/heroes/charlotte/card.webp"
+  },
+  {
+    "id": "chaugnar",
+    "name": "Chaugnar",
+    "icon": "/assets/heroes/chaugnar/icon.webp",
+    "card": "/assets/heroes/chaugnar/card.webp"
+  },
+  {
+    "id": "cresht",
+    "name": "Cresht",
+    "icon": "/assets/heroes/cresht/icon.webp",
+    "card": "/assets/heroes/cresht/card.webp"
+  },
+  {
+    "id": "darcy",
+    "name": "D’Arcy",
+    "icon": "/assets/heroes/darcy/icon.webp",
+    "card": "/assets/heroes/darcy/card.webp"
+  },
+  {
+    "id": "dextra",
+    "name": "Dextra",
+    "icon": "/assets/heroes/dextra/icon.webp",
+    "card": "/assets/heroes/dextra/card.webp"
+  },
+  {
+    "id": "dirak",
+    "name": "Dirak",
+    "icon": "/assets/heroes/dirak/icon.webp",
+    "card": "/assets/heroes/dirak/card.webp"
+  },
+  {
+    "id": "dolia",
+    "name": "Dolia",
+    "icon": "/assets/heroes/dolia/icon.webp",
+    "card": "/assets/heroes/dolia/card.webp"
+  },
+  {
+    "id": "dyadia",
+    "name": "Dyadia",
+    "icon": "/assets/heroes/dyadia/icon.webp",
+    "card": "/assets/heroes/dyadia/card.webp"
+  },
+  {
+    "id": "dieu-thuyen",
+    "name": "Điêu Thuyền",
+    "icon": "/assets/heroes/dieu-thuyen/icon.webp",
+    "card": "/assets/heroes/dieu-thuyen/card.webp"
+  },
+  {
+    "id": "11596",
+    "name": "Edras",
+    "icon": "/assets/heroes/11596/icon.webp",
+    "card": "/assets/heroes/11596/card.webp"
+  },
+  {
+    "id": "elandorr",
+    "name": "Eland’orr",
+    "icon": "/assets/heroes/elandorr/icon.webp",
+    "card": "/assets/heroes/elandorr/card.webp"
+  },
+  {
+    "id": "elsu",
+    "name": "Elsu",
+    "icon": "/assets/heroes/elsu/icon.webp",
+    "card": "/assets/heroes/elsu/card.webp"
+  },
+  {
+    "id": "enzo",
+    "name": "Enzo",
+    "icon": "/assets/heroes/enzo/icon.webp",
+    "card": "/assets/heroes/enzo/card.webp"
+  },
+  {
+    "id": "erin",
+    "name": "Erin",
+    "icon": "/assets/heroes/erin/icon.webp",
+    "card": "/assets/heroes/erin/card.webp"
+  },
+  {
+    "id": "errol",
+    "name": "Errol",
+    "icon": "/assets/heroes/errol/icon.webp",
+    "card": "/assets/heroes/errol/card.webp"
+  },
+  {
+    "id": "evita",
+    "name": "Evita",
+    "icon": "/assets/heroes/evita/icon.webp",
+    "card": "/assets/heroes/evita/card.webp"
+  },
+  {
+    "id": "fennik",
+    "name": "Fennik",
+    "icon": "/assets/heroes/fennik/icon.webp",
+    "card": "/assets/heroes/fennik/card.webp"
+  },
+  {
+    "id": "florentino",
+    "name": "Florentino",
+    "icon": "/assets/heroes/florentino/icon.webp",
+    "card": "/assets/heroes/florentino/card.webp"
+  },
+  {
+    "id": "flowborn-2",
+    "name": "Flowborn",
+    "icon": "/assets/heroes/flowborn-2/icon.webp",
+    "card": "/assets/heroes/flowborn-2/card.webp"
+  },
+  {
+    "id": "flowborn",
+    "name": "Flowborn",
+    "icon": "/assets/heroes/flowborn/icon.webp",
+    "card": "/assets/heroes/flowborn/card.webp"
+  },
+  {
+    "id": "gildur",
+    "name": "Gildur",
+    "icon": "/assets/heroes/gildur/icon.webp",
+    "card": "/assets/heroes/gildur/card.webp"
+  },
+  {
+    "id": "goverra",
+    "name": "Goverra",
+    "icon": "/assets/heroes/goverra/icon.webp",
+    "card": "/assets/heroes/goverra/card.webp"
+  },
+  {
+    "id": "grakk",
+    "name": "Grakk",
+    "icon": "/assets/heroes/grakk/icon.webp",
+    "card": "/assets/heroes/grakk/card.webp"
+  },
+  {
+    "id": "hayate",
+    "name": "Hayate",
+    "icon": "/assets/heroes/hayate/icon.webp",
+    "card": "/assets/heroes/hayate/card.webp"
+  },
+  {
+    "id": "heino",
+    "name": "Heino",
+    "icon": "/assets/heroes/heino/icon.webp",
+    "card": "/assets/heroes/heino/card.webp"
+  },
+  {
+    "id": "helen",
+    "name": "Helen",
+    "icon": "/assets/heroes/helen/icon.webp",
+    "card": "/assets/heroes/helen/card.webp"
+  },
+  {
+    "id": "iggy",
+    "name": "Iggy",
+    "icon": "/assets/heroes/iggy/icon.webp",
+    "card": "/assets/heroes/iggy/card.webp"
+  },
+  {
+    "id": "ignis",
+    "name": "Ignis",
+    "icon": "/assets/heroes/ignis/icon.webp",
+    "card": "/assets/heroes/ignis/card.webp"
+  },
+  {
+    "id": "ilumia",
+    "name": "Ilumia",
+    "icon": "/assets/heroes/ilumia/icon.webp",
+    "card": "/assets/heroes/ilumia/card.webp"
+  },
+  {
+    "id": "ishar",
+    "name": "Ishar",
+    "icon": "/assets/heroes/ishar/icon.webp",
+    "card": "/assets/heroes/ishar/card.webp"
+  },
+  {
+    "id": "jinna",
+    "name": "Jinna",
+    "icon": "/assets/heroes/jinna/icon.webp",
+    "card": "/assets/heroes/jinna/card.webp"
+  },
+  {
+    "id": "kahlii",
+    "name": "Kahlii",
+    "icon": "/assets/heroes/kahlii/icon.webp",
+    "card": "/assets/heroes/kahlii/card.webp"
+  },
+  {
+    "id": "kaine",
+    "name": "Kaine",
+    "icon": "/assets/heroes/kaine/icon.webp",
+    "card": "/assets/heroes/kaine/card.webp"
+  },
+  {
+    "id": "keera",
+    "name": "Keera",
+    "icon": "/assets/heroes/keera/icon.webp",
+    "card": "/assets/heroes/keera/card.webp"
+  },
+  {
+    "id": "kilgroth",
+    "name": "Kil’Groth",
+    "icon": "/assets/heroes/kilgroth/icon.webp",
+    "card": "/assets/heroes/kilgroth/card.webp"
+  },
+  {
+    "id": "kriknak",
+    "name": "Kriknak",
+    "icon": "/assets/heroes/kriknak/icon.webp",
+    "card": "/assets/heroes/kriknak/card.webp"
+  },
+  {
+    "id": "krixi",
+    "name": "Krixi",
+    "icon": "/assets/heroes/krixi/icon.webp",
+    "card": "/assets/heroes/krixi/card.webp"
+  },
+  {
+    "id": "krizzix",
+    "name": "Krizzix",
+    "icon": "/assets/heroes/krizzix/icon.webp",
+    "card": "/assets/heroes/krizzix/card.webp"
+  },
+  {
+    "id": "lauriel",
+    "name": "Lauriel",
+    "icon": "/assets/heroes/lauriel/icon.webp",
+    "card": "/assets/heroes/lauriel/card.webp"
+  },
+  {
+    "id": "laville",
+    "name": "Laville",
+    "icon": "/assets/heroes/laville/icon.webp",
+    "card": "/assets/heroes/laville/card.webp"
+  },
+  {
+    "id": "liliana",
+    "name": "Liliana",
+    "icon": "/assets/heroes/liliana/icon.webp",
+    "card": "/assets/heroes/liliana/card.webp"
+  },
+  {
+    "id": "lindis",
+    "name": "Lindis",
+    "icon": "/assets/heroes/lindis/icon.webp",
+    "card": "/assets/heroes/lindis/card.webp"
+  },
+  {
+    "id": "lorion",
+    "name": "Lorion",
+    "icon": "/assets/heroes/lorion/icon.webp",
+    "card": "/assets/heroes/lorion/card.webp"
+  },
+  {
+    "id": "lumburr",
+    "name": "Lumburr",
+    "icon": "/assets/heroes/lumburr/icon.webp",
+    "card": "/assets/heroes/lumburr/card.webp"
+  },
+  {
+    "id": "lu-bo",
+    "name": "Lữ Bố",
+    "icon": "/assets/heroes/lu-bo/icon.webp",
+    "card": "/assets/heroes/lu-bo/card.webp"
+  },
+  {
+    "id": "maloch",
+    "name": "Maloch",
+    "icon": "/assets/heroes/maloch/icon.webp",
+    "card": "/assets/heroes/maloch/card.webp"
+  },
+  {
+    "id": "marja",
+    "name": "Marja",
+    "icon": "/assets/heroes/marja/icon.webp",
+    "card": "/assets/heroes/marja/card.webp"
+  },
+  {
+    "id": "max",
+    "name": "Max",
+    "icon": "/assets/heroes/max/icon.webp",
+    "card": "/assets/heroes/max/card.webp"
+  },
+  {
+    "id": "mganga",
+    "name": "Mganga",
+    "icon": "/assets/heroes/mganga/icon.webp",
+    "card": "/assets/heroes/mganga/card.webp"
+  },
+  {
+    "id": "mina",
+    "name": "Mina",
+    "icon": "/assets/heroes/mina/icon.webp",
+    "card": "/assets/heroes/mina/card.webp"
+  },
+  {
+    "id": "ming",
+    "name": "Ming",
+    "icon": "/assets/heroes/ming/icon.webp",
+    "card": "/assets/heroes/ming/card.webp"
+  },
+  {
+    "id": "moren",
+    "name": "Moren",
+    "icon": "/assets/heroes/moren/icon.webp",
+    "card": "/assets/heroes/moren/card.webp"
+  },
+  {
+    "id": "murad",
+    "name": "Murad",
+    "icon": "/assets/heroes/murad/icon.webp",
+    "card": "/assets/heroes/murad/card.webp"
+  },
+  {
+    "id": "nakroth",
+    "name": "Nakroth",
+    "icon": "/assets/heroes/nakroth/icon.webp",
+    "card": "/assets/heroes/nakroth/card.webp"
+  },
+  {
+    "id": "natalya",
+    "name": "Natalya",
+    "icon": "/assets/heroes/natalya/icon.webp",
+    "card": "/assets/heroes/natalya/card.webp"
+  },
+  {
+    "id": "ngo-khong",
+    "name": "Ngộ Không",
+    "icon": "/assets/heroes/ngo-khong/icon.webp",
+    "card": "/assets/heroes/ngo-khong/card.webp"
+  },
+  {
+    "id": "omega",
+    "name": "Omega",
+    "icon": "/assets/heroes/omega/icon.webp",
+    "card": "/assets/heroes/omega/card.webp"
+  },
+  {
+    "id": "omen",
+    "name": "Omen",
+    "icon": "/assets/heroes/omen/icon.webp",
+    "card": "/assets/heroes/omen/card.webp"
+  },
+  {
+    "id": "ormarr",
+    "name": "Ormarr",
+    "icon": "/assets/heroes/ormarr/icon.webp",
+    "card": "/assets/heroes/ormarr/card.webp"
+  },
+  {
+    "id": "paine",
+    "name": "Paine",
+    "icon": "/assets/heroes/paine/icon.webp",
+    "card": "/assets/heroes/paine/card.webp"
+  },
+  {
+    "id": "preyta",
+    "name": "Preyta",
+    "icon": "/assets/heroes/preyta/icon.webp",
+    "card": "/assets/heroes/preyta/card.webp"
+  },
+  {
+    "id": "qi",
+    "name": "Qi",
+    "icon": "/assets/heroes/qi/icon.webp",
+    "card": "/assets/heroes/qi/card.webp"
+  },
+  {
+    "id": "quillen",
+    "name": "Quillen",
+    "icon": "/assets/heroes/quillen/icon.webp",
+    "card": "/assets/heroes/quillen/card.webp"
+  },
+  {
+    "id": "raz",
+    "name": "Raz",
+    "icon": "/assets/heroes/raz/icon.webp",
+    "card": "/assets/heroes/raz/card.webp"
+  },
+  {
+    "id": "richter",
+    "name": "Richter",
+    "icon": "/assets/heroes/richter/icon.webp",
+    "card": "/assets/heroes/richter/card.webp"
+  },
+  {
+    "id": "rouie",
+    "name": "Rouie",
+    "icon": "/assets/heroes/rouie/icon.webp",
+    "card": "/assets/heroes/rouie/card.webp"
+  },
+  {
+    "id": "rourke",
+    "name": "Rourke",
+    "icon": "/assets/heroes/rourke/icon.webp",
+    "card": "/assets/heroes/rourke/card.webp"
+  },
+  {
+    "id": "roxie",
+    "name": "Roxie",
+    "icon": "/assets/heroes/roxie/icon.webp",
+    "card": "/assets/heroes/roxie/card.webp"
+  },
+  {
+    "id": "ryoma",
+    "name": "Ryoma",
+    "icon": "/assets/heroes/ryoma/icon.webp",
+    "card": "/assets/heroes/ryoma/card.webp"
+  },
+  {
+    "id": "sephera",
+    "name": "Sephera",
+    "icon": "/assets/heroes/sephera/icon.webp",
+    "card": "/assets/heroes/sephera/card.webp"
+  },
+  {
+    "id": "sinestrea",
+    "name": "Sinestrea",
+    "icon": "/assets/heroes/sinestrea/icon.webp",
+    "card": "/assets/heroes/sinestrea/card.webp"
+  },
+  {
+    "id": "skud",
+    "name": "Skud",
+    "icon": "/assets/heroes/skud/icon.webp",
+    "card": "/assets/heroes/skud/card.webp"
+  },
+  {
+    "id": "slimz",
+    "name": "Slimz",
+    "icon": "/assets/heroes/slimz/icon.webp",
+    "card": "/assets/heroes/slimz/card.webp"
+  },
+  {
+    "id": "stuart",
+    "name": "Stuart",
+    "icon": "/assets/heroes/stuart/icon.webp",
+    "card": "/assets/heroes/stuart/card.webp"
+  },
+  {
+    "id": "superman",
+    "name": "Superman",
+    "icon": "/assets/heroes/superman/icon.webp",
+    "card": "/assets/heroes/superman/card.webp"
+  },
+  {
+    "id": "taara",
+    "name": "Taara",
+    "icon": "/assets/heroes/taara/icon.webp",
+    "card": "/assets/heroes/taara/card.webp"
+  },
+  {
+    "id": "tachi",
+    "name": "Tachi",
+    "icon": "/assets/heroes/tachi/icon.webp",
+    "card": "/assets/heroes/tachi/card.webp"
+  },
+  {
+    "id": "tamyn",
+    "name": "Tamyn",
+    "icon": "/assets/heroes/tamyn/icon.webp",
+    "card": "/assets/heroes/tamyn/card.webp"
+  },
+  {
+    "id": "teemee",
+    "name": "TeeMee",
+    "icon": "/assets/heroes/teemee/icon.webp",
+    "card": "/assets/heroes/teemee/card.webp"
+  },
+  {
+    "id": "teeri",
+    "name": "Teeri",
+    "icon": "/assets/heroes/teeri/icon.webp",
+    "card": "/assets/heroes/teeri/card.webp"
+  },
+  {
+    "id": "telannas",
+    "name": "Tel’Annas",
+    "icon": "/assets/heroes/telannas/icon.webp",
+    "card": "/assets/heroes/telannas/card.webp"
+  },
+  {
+    "id": "thane",
+    "name": "Thane",
+    "icon": "/assets/heroes/thane/icon.webp",
+    "card": "/assets/heroes/thane/card.webp"
+  },
+  {
+    "id": "the-flash",
+    "name": "The Flash",
+    "icon": "/assets/heroes/the-flash/icon.webp",
+    "card": "/assets/heroes/the-flash/card.webp"
+  },
+  {
+    "id": "thorne",
+    "name": "Thorne",
+    "icon": "/assets/heroes/thorne/icon.webp",
+    "card": "/assets/heroes/thorne/card.webp"
+  },
+  {
+    "id": "toro",
+    "name": "Toro",
+    "icon": "/assets/heroes/toro/icon.webp",
+    "card": "/assets/heroes/toro/card.webp"
+  },
+  {
+    "id": "trieu-van",
+    "name": "Triệu Vân",
+    "icon": "/assets/heroes/trieu-van/icon.webp",
+    "card": "/assets/heroes/trieu-van/card.webp"
+  },
+  {
+    "id": "tulen",
+    "name": "Tulen",
+    "icon": "/assets/heroes/tulen/icon.webp",
+    "card": "/assets/heroes/tulen/card.webp"
+  },
+  {
+    "id": "valhein",
+    "name": "Valhein",
+    "icon": "/assets/heroes/valhein/icon.webp",
+    "card": "/assets/heroes/valhein/card.webp"
+  },
+  {
+    "id": "veera",
+    "name": "Veera",
+    "icon": "/assets/heroes/veera/icon.webp",
+    "card": "/assets/heroes/veera/card.webp"
+  },
+  {
+    "id": "veres",
+    "name": "Veres",
+    "icon": "/assets/heroes/veres/icon.webp",
+    "card": "/assets/heroes/veres/card.webp"
+  },
+  {
+    "id": "violet",
+    "name": "Violet",
+    "icon": "/assets/heroes/violet/icon.webp",
+    "card": "/assets/heroes/violet/card.webp"
+  },
+  {
+    "id": "volkath",
+    "name": "Volkath",
+    "icon": "/assets/heroes/volkath/icon.webp",
+    "card": "/assets/heroes/volkath/card.webp"
+  },
+  {
+    "id": "wiro",
+    "name": "Wiro",
+    "icon": "/assets/heroes/wiro/icon.webp",
+    "card": "/assets/heroes/wiro/card.webp"
+  },
+  {
+    "id": "wisp",
+    "name": "Wisp",
+    "icon": "/assets/heroes/wisp/icon.webp",
+    "card": "/assets/heroes/wisp/card.webp"
+  },
+  {
+    "id": "wonder-woman",
+    "name": "Wonder Woman",
+    "icon": "/assets/heroes/wonder-woman/icon.webp",
+    "card": "/assets/heroes/wonder-woman/card.webp"
+  },
+  {
+    "id": "xeniel",
+    "name": "Xeniel",
+    "icon": "/assets/heroes/xeniel/icon.webp",
+    "card": "/assets/heroes/xeniel/card.webp"
+  },
+  {
+    "id": "ybneth",
+    "name": "Y’bneth",
+    "icon": "/assets/heroes/ybneth/icon.webp",
+    "card": "/assets/heroes/ybneth/card.webp"
+  },
+  {
+    "id": "yan",
+    "name": "Yan",
+    "icon": "/assets/heroes/yan/icon.webp",
+    "card": "/assets/heroes/yan/card.webp"
+  },
+  {
+    "id": "yena",
+    "name": "Yena",
+    "icon": "/assets/heroes/yena/icon.webp",
+    "card": "/assets/heroes/yena/card.webp"
+  },
+  {
+    "id": "yorn",
+    "name": "Yorn",
+    "icon": "/assets/heroes/yorn/icon.webp",
+    "card": "/assets/heroes/yorn/card.webp"
+  },
+  {
+    "id": "yue",
+    "name": "Yue",
+    "icon": "/assets/heroes/yue/icon.webp",
+    "card": "/assets/heroes/yue/card.webp"
+  },
+  {
+    "id": "zata",
+    "name": "Zata",
+    "icon": "/assets/heroes/zata/icon.webp",
+    "card": "/assets/heroes/zata/card.webp"
+  },
+  {
+    "id": "zephys",
+    "name": "Zephys",
+    "icon": "/assets/heroes/zephys/icon.webp",
+    "card": "/assets/heroes/zephys/card.webp"
+  },
+  {
+    "id": "zill",
+    "name": "Zill",
+    "icon": "/assets/heroes/zill/icon.webp",
+    "card": "/assets/heroes/zill/card.webp"
+  },
+  {
+    "id": "zip",
+    "name": "Zip",
+    "icon": "/assets/heroes/zip/icon.webp",
+    "card": "/assets/heroes/zip/card.webp"
+  },
+  {
+    "id": "zuka",
+    "name": "Zuka",
+    "icon": "/assets/heroes/zuka/icon.webp",
+    "card": "/assets/heroes/zuka/card.webp"
+  }
+]

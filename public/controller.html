@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sound Controller</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px 20px;
+      background: #0c111d;
+      color: #f1f3f8;
+      font-family: Arial, sans-serif;
+    }
+
+    .controller {
+      width: 100%;
+      max-width: 440px;
+      margin: auto;
+    }
+
+    .header {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #30394e;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow {
+      color: #d7ad54;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 3px;
+    }
+
+    h1 {
+      margin: 9px 0 5px;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      color: #929db2;
+      font-size: 12px;
+    }
+
+    .section-title {
+      margin: 22px 0 12px;
+      color: #d7ad54;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .track {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px;
+      margin-bottom: 10px;
+      border: 1px solid #30394e;
+      border-radius: 9px;
+      background: #171e2e;
+    }
+
+    .track.active {
+      border-color: #d7ad54;
+      background: #252437;
+    }
+
+    .track-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .track-name {
+      font-size: 13px;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .track-status {
+      margin-top: 5px;
+      color: #8792a8;
+      font-size: 10px;
+    }
+
+    .track.active .track-status {
+      color: #e2bd6d;
+    }
+
+    button {
+      cursor: pointer;
+      border: 0;
+      font-weight: 800;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    .play-button {
+      flex-shrink: 0;
+      width: 76px;
+      padding: 10px 8px;
+      border-radius: 6px;
+      background: #d7ad54;
+      color: #111522;
+      font-size: 11px;
+    }
+
+    .play-button:hover:not(:disabled) {
+      background: #f0ca75;
+    }
+
+    .volume-panel {
+      margin-top: 24px;
+      padding: 17px;
+      border: 1px solid #30394e;
+      border-radius: 9px;
+      background: #171e2e;
+    }
+
+    .volume-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    #volumeValue {
+      color: #e2bd6d;
+      font-size: 14px;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: #d7ad54;
+      cursor: pointer;
+    }
+
+    .volume-labels {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 7px;
+      color: #7f8aa0;
+      font-size: 10px;
+    }
+
+    .stop-all {
+      width: 100%;
+      margin-top: 16px;
+      padding: 12px;
+      border: 1px solid #9b4652;
+      border-radius: 6px;
+      background: #291923;
+      color: #ff9ca7;
+      font-size: 11px;
+    }
+
+    .stop-all:hover {
+      background: #40202b;
+    }
+
+    .poster-toggle {
+      width: 100%;
+      margin-top: 10px;
+      padding: 12px;
+      border: 1px solid #5b6fa8;
+      border-radius: 6px;
+      background: #182541;
+      color: #c5d7ff;
+      font-size: 11px;
+    }
+
+    .poster-toggle:hover {
+      background: #22365d;
+    }
+
+    .message {
+      min-height: 30px;
+      margin-top: 14px;
+      color: #aab4c7;
+      font-size: 11px;
+      line-height: 1.5;
+    }
+
+    .footer {
+      margin-top: 20px;
+      color: #657087;
+      font-size: 10px;
+      text-align: center;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="controller">
+    <header class="header">
+      <div class="eyebrow">AOV TOURNAMENT</div>
+      <h1>SOUND CONTROL</h1>
+      <div class="subtitle">Bảng điều khiển âm thanh giải đấu</div>
+    </header>
+
+    <div class="section-title">MUSIC LIBRARY</div>
+
+    <div id="trackList"></div>
+
+    <section class="volume-panel">
+      <div class="volume-heading">
+        <span>MASTER VOLUME</span>
+        <span id="volumeValue">50%</span>
+      </div>
+
+      <input
+        id="volumeSlider"
+        type="range"
+        min="0"
+        max="100"
+        value="50"
+      />
+
+      <div class="volume-labels">
+        <span>IM LẶNG</span>
+        <span>TỐI ĐA</span>
+      </div>
+    </section>
+
+    <button class="stop-all" id="stopAll">
+      DỪNG TẤT CẢ ÂM THANH
+    </button>
+
+    <button class="poster-toggle" id="posterToggle" type="button">
+      ẨN POSTER
+    </button>
+
+    <div class="message" id="message" role="status">
+      Sẵn sàng phát nhạc.
+    </div>
+  </main>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const tracks = [
+        {
+          name: "APL 2026 Soundtrack",
+          file: "/sound/APL%202026%20Soundtrack.mp3"
+        },
+        {
+          name: "APL 2026 Queens Showdown Soundtrack",
+          file: "/sound/APL%202026%20Queens%20Showdown%20Soundtrack.mp3"
+        },
+        {
+          name: "APL 2026 Ban Pick",
+          file: "/sound/APL%202026%20Ban%20Pick.mp3"
+        },
+        {
+          name: "APL 2026 Highlight",
+          file: "/sound/APL%202026%20Highlight.mp3"
+        },
+        {
+          name: "AIC 2024 Winner",
+          file: "/sound/AIC%202024%20Winner.mp3"
+        },
+      ];
+
+      const trackList = document.getElementById("trackList");
+      const volumeSlider = document.getElementById("volumeSlider");
+      const volumeValue = document.getElementById("volumeValue");
+      const message = document.getElementById("message");
+      const stopAllButton = document.getElementById("stopAll");
+      const posterToggle = document.getElementById("posterToggle");
+      const POSTER_STORAGE_KEY = "aov-poster-state";
+
+      function readPosterVisible() {
+        try {
+          return localStorage.getItem(POSTER_STORAGE_KEY) !== "hidden";
+        } catch {
+          return true;
+        }
+      }
+
+      function updatePosterButton() {
+        posterToggle.textContent = readPosterVisible() ? "ẨN POSTER" : "HIỆN POSTER";
+      }
+
+      posterToggle.addEventListener("click", () => {
+        const nextState = readPosterVisible() ? "hidden" : "visible";
+        try {
+          localStorage.setItem(POSTER_STORAGE_KEY, nextState);
+          updatePosterButton();
+          message.textContent = nextState === "hidden"
+            ? "Đã ẩn poster trên màn hình chính."
+            : "Đã hiện poster trên màn hình chính.";
+        } catch {
+          message.textContent = "Không thể đồng bộ poster. Hãy kiểm tra cài đặt trình duyệt.";
+        }
+      });
+
+      window.addEventListener("storage", (event) => {
+        if (event.key === POSTER_STORAGE_KEY) updatePosterButton();
+      });
+
+      updatePosterButton();
+
+      // Chỉ tạo một trình phát âm thanh duy nhất.
+      const audio = new Audio();
+      audio.preload = "none";
+      audio.loop = true;
+
+      let currentTrack = -1;
+      let isPlaying = false;
+      let requestId = 0;
+
+      // Đọc âm lượng đã lưu.
+      let savedVolume = 50;
+
+      try {
+        const stored = localStorage.getItem("aov-volume");
+
+        if (stored !== null) {
+          const parsed = Number(stored);
+
+          if (Number.isFinite(parsed)) {
+            savedVolume = Math.max(0, Math.min(100, parsed));
+          }
+        }
+      } catch (error) {
+        // Nếu trình duyệt chặn localStorage, vẫn sử dụng mặc định.
+      }
+
+      audio.volume = savedVolume / 100;
+      volumeSlider.value = savedVolume;
+      volumeValue.textContent = savedVolume + "%";
+
+      const trackCards = [];
+
+      // Tạo danh sách bài nhạc.
+      tracks.forEach((track, index) => {
+        const card = document.createElement("div");
+        card.className = "track";
+
+        const info = document.createElement("div");
+        info.className = "track-info";
+
+        const name = document.createElement("div");
+        name.className = "track-name";
+        name.textContent = track.name;
+
+        const status = document.createElement("div");
+        status.className = "track-status";
+        status.textContent = "ĐANG TẮT";
+
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = "play-button";
+        button.textContent = "PHÁT";
+
+        info.appendChild(name);
+        info.appendChild(status);
+        card.appendChild(info);
+        card.appendChild(button);
+
+        trackList.appendChild(card);
+
+        trackCards.push({
+          card,
+          status,
+          button
+        });
+
+        button.addEventListener("click", () => {
+          toggleTrack(index);
+        });
+      });
+
+      function updateInterface() {
+        trackCards.forEach((item, index) => {
+          const active = index === currentTrack && isPlaying;
+
+          item.card.classList.toggle("active", active);
+          item.button.textContent = active ? "TẮT" : "PHÁT";
+          item.status.textContent = active ? "ĐANG PHÁT" : "ĐANG TẮT";
+        });
+      }
+
+      async function toggleTrack(index) {
+        // Nếu đang phát đúng bài này thì tắt.
+        if (currentTrack === index && !audio.paused) {
+          requestId++;
+          audio.pause();
+          audio.currentTime = 0;
+
+          isPlaying = false;
+          currentTrack = -1;
+
+          updateInterface();
+          message.textContent = "Đã tắt nhạc.";
+          return;
+        }
+
+        // Vô hiệu hóa các yêu cầu phát cũ.
+        const thisRequest = ++requestId;
+
+        audio.pause();
+        audio.currentTime = 0;
+
+        isPlaying = false;
+        currentTrack = index;
+        updateInterface();
+
+        audio.src = tracks[index].file;
+        audio.volume = Number(volumeSlider.value) / 100;
+
+        message.textContent = "Đang tải: " + tracks[index].name;
+
+        try {
+          await audio.play();
+
+          // Bỏ qua kết quả của yêu cầu cũ.
+          if (thisRequest !== requestId) return;
+
+          isPlaying = true;
+          updateInterface();
+          message.textContent = "Đang phát: " + tracks[index].name;
+        } catch (error) {
+          if (thisRequest !== requestId) return;
+
+          isPlaying = false;
+          currentTrack = -1;
+
+          updateInterface();
+          message.textContent =
+            "Không phát được nhạc. Kiểm tra file trong public/sound.";
+        }
+      }
+
+      // Chỉnh âm lượng.
+      volumeSlider.addEventListener("input", () => {
+        const value = Number(volumeSlider.value);
+
+        audio.volume = value / 100;
+        volumeValue.textContent = value + "%";
+
+        try {
+          localStorage.setItem("aov-volume", String(value));
+        } catch (error) {
+          // Không ảnh hưởng chức năng phát nhạc.
+        }
+      });
+
+      // Dừng toàn bộ âm thanh.
+      stopAllButton.addEventListener("click", () => {
+        requestId++;
+
+        audio.pause();
+        audio.currentTime = 0;
+
+        isPlaying = false;
+        currentTrack = -1;
+
+        updateInterface();
+        message.textContent = "Đã dừng tất cả âm thanh.";
+      });
+
+      audio.addEventListener("error", () => {
+        if (currentTrack === -1) return;
+
+        isPlaying = false;
+        currentTrack = -1;
+
+        updateInterface();
+        message.textContent =
+          "Lỗi tải file nhạc. Hãy kiểm tra tên và đường dẫn MP3.";
+      });
+
+      updateInterface();
+      updatePosterButton();
+    })();
+  </script>
+</body>
+</html>

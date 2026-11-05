@@ -1,0 +1,19 @@
+{
+  "name": "aov-tournament",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "sync:heroes": "node scripts/syncHeroes.js"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "sharp": "^0.35.5"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}
